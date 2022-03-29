@@ -41,8 +41,12 @@ const drawItem = (itemText) => {
     span.textContent = itemText/*Добовляем текст в span с помощью .textContent*/
     const button = document.createElement('button')/*Создаем button с помощью <document.createElement>*/
     button.classList.add('btn', 'btn-danger', 'btn-sm', 'delete-btn')/*Добовляем классы в button с помощью .classList.add*/
-
+    const checkBox = document.createElement('input')
+    checkBox.setAttribute("type", "checkbox")
+    checkBox.classList.add('form-check-input')
+    console.log(checkBox)
     button.textContent = 'delete'/*Добовляем текст в button с помощью .textContent*/
+    li.appendChild(checkBox)
     li.appendChild(span)/*span делаем дочерным элементом li с помощью .appendChild*/
     li.appendChild(button)/*button делаем дочерным элементом li с помощью .appendChild*/
     toDoList.appendChild(li)/*li делаем дочерным элементом ul с помощью .appendChild*/
