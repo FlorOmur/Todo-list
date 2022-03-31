@@ -73,4 +73,3 @@ const drawList = (array) => {
 }
 
 drawList(allTodos)
-
