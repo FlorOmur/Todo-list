@@ -44,7 +44,6 @@ const drawItem = (itemText) => {
     const checkBox = document.createElement('input')
     checkBox.setAttribute("type", "checkbox")
     checkBox.classList.add('form-check-input')
-    console.log(checkBox)
     button.textContent = 'delete'/*Добовляем текст в button с помощью .textContent*/
     li.appendChild(checkBox)
     li.appendChild(span)/*span делаем дочерным элементом li с помощью .appendChild*/
@@ -74,10 +73,6 @@ const drawList = (array) => {
 }
 
 drawList(allTodos)
-
-
-
-
 
 
 
