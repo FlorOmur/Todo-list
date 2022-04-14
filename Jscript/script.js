@@ -73,3 +73,7 @@ const drawList = (array) => {
 }
 
 drawList(allTodos)
+
+let us = {
+    'name': 'jon'
+}
